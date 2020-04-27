@@ -92,9 +92,6 @@ main {
     display: -webkit-box;
     display: flex;
 }
-.ms-jumbotron-content {
-  width: 50%;
-}
 .ms-jumbotron-title {
   font-size: 30px;
   line-height: 1.33;
@@ -213,6 +210,9 @@ line-height: 1.45;
 }
 .d-sm-block {
   display: block!important;
+}
+.ms-jumbotron-content {
+  width: 50%;
 }
 }
 
