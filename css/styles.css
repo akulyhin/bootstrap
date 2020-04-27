@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #232d4b;
+  font-weight: 500;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+h2 {
+    font-weight: 700;
+    display: block;
+    font-size: 36px;
+}
+.ms-header {
+  padding: 24px 0;
+}
+/* MAIN MENU */
+.nav-link {
+  font-weight: 700;
+  color: #2855af;
+  text-decoration: none;
+}
+.navbar-brand {
+  margin-top: -7px;
+}
+.navbar-nav {
+  align-items: center;
+}
+.nav-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.nav-item:not(.menu-item-border) a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: .125em;
+  background-color: #2855af;
+  opacity: 0;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+}
+.nav-item a:hover::after {
+opacity: 1;
+}
+.menu-item-border a {
+  padding: 10px 25px !important;
+  text-decoration: none;
+  border: 2px solid #2855af;
+  border-radius: 8px;
+  -webkit-transition: .2s ease background-color,.2s ease color;
+  transition: .2s ease background-color,.2s ease color;
+}
+.menu-item-register {
+  margin-left: 10px!important;
+}
+.menu-item-register a {
+  color: #fff;
+  background-color:#2855af;
+}
+.menu-item-border a:hover {
+  background-color: #234187;
+  color: #fff;
+}
+
+.custom-toggle .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(35,65,135,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggle.navbar-toggler {
+  border-color: #234187;
+} 
+/* /MAIN MENU */
+
+main {
+  overflow: hidden;
+}
+
+/* SECTION: ms-jumbotron
+=================================================== */
+.ms-jumbotron {
+  padding: 50px 0 55px;
+}
+.ms-jumbotron-inner {
+  position: relative;
+    display: -webkit-box;
+    display: flex;
+}
+.ms-jumbotron-content {
+  width: 50%;
+}
+.ms-jumbotron-title {
+  font-size: 30px;
+  line-height: 1.33;
+  font-weight: 800;
+}
+.ms-jumbotron-subtitle {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.ms-button {
+  min-width: 330px;
+  margin-top: 50px;
+  display: inline-block;
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    outline: 0;
+    cursor: pointer;
+    -webkit-transition: .2s ease-in-out background-color,.2s ease-in-out color,.2s ease-in-out border-color;
+    transition: .2s ease-in-out background-color,.2s ease-in-out color,.2s ease-in-out border-color;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 16px 80px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.ms-button:hover {
+  background-color: #234187;
+  text-decoration: none;
+  color: #fff;
+}
+.ms-button-primary {
+  color: #fff;
+  background-color:#2855af;
+}
+.ms-jumbotron-image {
+  position: absolute;
+    top: 50%;
+    right: 0;
+    flex-shrink: 0;
+    width: 70%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+.d-sm-block {
+    display: block!important;
+}
+}
+
+.b-header .logo img, img, svg {
+  vertical-align: middle;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* /SECTION: ms-jumbotron
+=================================================== */
+
+@media screen and (max-width: 991px) {
+  .nav-item:not(:first-child) {
+    margin-left: 0;
+  }
+  .menu-item-border {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ms-jumbotron {
+    position: relative;
+    padding: 85px 0 120px;
+}
+.ms-jumbotron-title {
+  font-size: 46px;
+  line-height: 1.18;
+}
+.ms-jumbotron-subtitle {
+max-width: 400px;
+margin-top: 25px;
+font-size: 21px;
+line-height: 1.45;
+}
+.ms-jumbotron-inner::before {
+  content: '';
+  position: absolute;
+  top: -70px;
+  left: -233px;
+  width: 162px;
+  height: 155px;
+  background-image: url(/img/jumbotron-bubbles.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+}
+
+/* /SECTION: ms-jumbotron
+=================================================== */
+
+@media (min-width: 768px) {
+.ms-button {
+    min-width: 320px;
+    padding: 16px 25px!important;
+}
+.d-sm-block {
+  display: block!important;
+}
+}
+
+@media (max-width: 1199.98px) and (min-width: 768px) {
+.ms-jumbotron-image {
+    top: 55%;
+    right: -25%;
+    width: 70%!important;
+    margin-top: 0!important;
+    margin-right: 0!important;
+}
+}
+@media (max-width: 767.98px) {
+.ms-jumbotron-content {
+    max-width: 320px;
+    margin: 0 auto;
+}
+}
+
+
